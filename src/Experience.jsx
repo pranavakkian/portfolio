@@ -20,7 +20,7 @@ function Experience() {
       <Header as="h4">Intern</Header>
       <p style={{ fontSize: "13px" }}>Biztime IT Solutions Pvt. Ltd</p>
       <p style={{ fontSize: "13px", color: "grey" }}>
-        Jun 2017 - Jul 2017 <br /> Bengalure, Karnataka, India
+        Jun 2017 - Jul 2017 | 2 mos <br /> Bengalure, Karnataka, India
       </p>
       <p style={{ fontSize: "13px" }}>
         Worked on the back end of web development with JAVA Script, Clear DB,
