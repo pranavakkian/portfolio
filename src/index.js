@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactGA from "react-ga";
 import "semantic-ui-css/semantic.min.css";
 import App from "./App.jsx";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
+
+ReactGA.initialize("UA-124182431-4");
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
