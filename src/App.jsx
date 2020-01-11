@@ -1,4 +1,5 @@
 import React, { Component, createRef } from "react";
+import AddToHomescreen from "react-add-to-homescreen";
 import AdSense from "react-adsense";
 import { Grid, Segment, Sticky } from "semantic-ui-react";
 import About from "./About";
@@ -18,6 +19,12 @@ class App extends Component {
 
   handleNavBarCallback = event => {
     this.setState({ activeItem: event.target.innerText });
+  };
+
+  handleAddToHomescreenClick = () => {
+    alert(`
+    1. Open Share menu
+    2. Tap on "Add to Home Screen" button`);
   };
 
   render() {
@@ -61,6 +68,9 @@ class App extends Component {
         <footer>
           <Foot />
         </footer>
+        <AddToHomescreen
+          onAddToHomescreenClick={this.handleAddToHomescreenClick}
+        />
       </div>
     );
   }
