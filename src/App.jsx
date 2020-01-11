@@ -1,6 +1,5 @@
 import React, { Component, createRef } from "react";
 import AddToHomescreen from "react-add-to-homescreen";
-import AdSense from "react-adsense";
 import { Grid, Segment, Sticky } from "semantic-ui-react";
 import About from "./About";
 import Accomplishments from "./Accomplishments";
@@ -57,14 +56,6 @@ class App extends Component {
             </Grid.Row>
           </Grid>
         </Segment>
-        <AdSense.Google
-          client="ca-pub-6964520538689912"
-          slot="7818660077"
-          style={{ display: "block" }}
-          format="auto"
-          responsive="true"
-          layoutKey="-gw-1+2a-9x+5c"
-        />
         <footer>
           <Foot />
         </footer>
