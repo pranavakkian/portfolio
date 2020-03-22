@@ -1,42 +1,48 @@
-import React, { Component, createRef } from "react";
-import AddToHomescreen from "react-add-to-homescreen";
-import { Grid, Segment, Sticky } from "semantic-ui-react";
-import About from "./About";
-import Accomplishments from "./Accomplishments";
-import "./App.css";
-import Education from "./Education";
-import Experience from "./Experience";
-import Foot from "./Foot";
-import NavBar from "./NavBar";
-import ProfileCard from "./ProfileCard";
-import Skills from "./Skills";
+/* eslint-disable no-undef */
+import React, { Component, createRef } from 'react';
+import AddToHomescreen from 'react-add-to-homescreen';
+import { Grid, Segment, Sticky } from 'semantic-ui-react';
+import About from '../Components/About/About';
+import Accomplishments from '../Components/Accomplishments/Accomplishments';
+import './App.css';
+import Education from '../Components/Education/Education';
+import Experience from '../Components/Experience/Experience';
+import Foot from '../Components/Foot/Foot';
+import NavBar from '../Components/NavBar/NavBar';
+import ProfileCard from '../Components/ProfileCard/ProfileCard';
+import Skills from '../Components/Skills/Skills';
 
 class App extends Component {
   contextRef = createRef();
 
-  state = { activeItem: "About" };
+  constructor() {
+    super();
+    this.state = { activeItem: 'About' };
+  }
 
-  handleNavBarCallback = event => {
+  handleNavBarCallback = (event) => {
     this.setState({ activeItem: event.target.innerText });
   };
 
   handleAddToHomescreenClick = () => {
+    // eslint-disable-next-line no-alert
     alert(`
     1. Open Share menu
     2. Tap on "Add to Home Screen" button`);
   };
 
   render() {
+    const { activeItem } = this.state;
     let item;
-    if (this.state.activeItem === "About") {
+    if (activeItem === 'About') {
       item = <About />;
-    } else if (this.state.activeItem === "Experience") {
+    } else if (activeItem === 'Experience') {
       item = <Experience />;
-    } else if (this.state.activeItem === "Education") {
+    } else if (activeItem === 'Education') {
       item = <Education />;
-    } else if (this.state.activeItem === "Skills") {
+    } else if (activeItem === 'Skills') {
       item = <Skills />;
-    } else if (this.state.activeItem === "Accomplishments") {
+    } else if (activeItem === 'Accomplishments') {
       item = <Accomplishments />;
     }
     return (
