@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Divider, Header } from 'semantic-ui-react';
 
-const Accomplishments = () => (
+const Accomplishments = memo(() => (
   <Container text textAlign="justified" fluid>
     <Header as="h2" color="grey">
       Accomplishments
@@ -71,6 +71,6 @@ const Accomplishments = () => (
       Database is used for this project
     </p>
   </Container>
-);
+));
 
 export default Accomplishments;

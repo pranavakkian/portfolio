@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { memo } from 'react';
 import {
-  Container, Dropdown, Header, Image, Menu, Responsive,
+  Container,
+  Dropdown,
+  Header,
+  Image,
+  Menu,
+  Responsive,
 } from 'semantic-ui-react';
 import icon from './Assets/icon.ico';
 
-const NavBar = (props) => {
+const NavBar = memo((props) => {
   const { callback } = props;
   return (
     <>
@@ -63,7 +68,7 @@ const NavBar = (props) => {
       </Responsive>
     </>
   );
-};
+});
 
 NavBar.propTypes = {
   callback: PropTypes.func.isRequired,

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Divider, Header } from 'semantic-ui-react';
 
-const Education = () => (
+const Education = memo(() => (
   <Container text textAlign="justified" fluid>
     <Header as="h2" color="grey">
       Education
@@ -20,6 +20,6 @@ const Education = () => (
     <p style={{ fontSize: '13px' }}>10th, 8.4</p>
     <p style={{ fontSize: '13px', color: 'grey' }}>2012 - 2013</p>
   </Container>
-);
+));
 
 export default Education;

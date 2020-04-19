@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Icon, Menu } from 'semantic-ui-react';
 
-const Foot = () => (
+const Foot = memo(() => (
   <Menu secondary stackable style={{ backgroundColor: 'white' }}>
     <Container>
       <Menu.Item>
         <Icon name="copyright" />
-        Pranav Gupta 2019
+        Pranav Gupta
+        {' '}
+        {new Date().getFullYear()}
       </Menu.Item>
     </Container>
   </Menu>
-);
+));
 
 export default Foot;

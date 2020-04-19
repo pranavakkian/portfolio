@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Divider, Header } from 'semantic-ui-react';
 
-const Experience = () => (
+const Experience = memo(() => (
   <Container text textAlign="justified" fluid>
     <Header as="h2" color="grey">
       Experience
@@ -30,6 +30,6 @@ const Experience = () => (
       Servlet, JSON, JAVA, JDBC and IBM Bluemix.
     </p>
   </Container>
-);
+));
 
 export default Experience;

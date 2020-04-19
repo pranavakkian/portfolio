@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Header } from 'semantic-ui-react';
 
-const About = () => (
+const About = memo(() => (
   <Container text textAlign="justified" fluid>
     <Header as="h2" color="grey">
       About
@@ -26,6 +26,6 @@ const About = () => (
       swimming, and clubbing.
     </p>
   </Container>
-);
+));
 
 export default About;

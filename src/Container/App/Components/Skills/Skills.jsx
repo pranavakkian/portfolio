@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import {
   Container, Divider, Header, Progress,
 } from 'semantic-ui-react';
 
-const Skills = () => (
+const Skills = memo(() => (
   <Container text textAlign="justified" fluid>
     <Header as="h2" color="grey">
       Skills
@@ -62,6 +62,6 @@ const Skills = () => (
     <Header as="h5">J2EE Web-Services</Header>
     <Progress percent={85} size="tiny" color="blue" />
   </Container>
-);
+));
 
 export default Skills;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react';
 import pic from './Assets/pic.jpg';
 
-const ProfileCard = () => (
+const ProfileCard = memo(() => (
   <Card>
     <Image src={pic} wrapped ui={false} />
     <Card.Content>
@@ -43,6 +43,6 @@ const ProfileCard = () => (
       </a>
     </Card.Content>
   </Card>
-);
+));
 
 export default ProfileCard;
