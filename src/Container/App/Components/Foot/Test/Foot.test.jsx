@@ -22,5 +22,5 @@ it('Foot component renders successfully', () => {
     render(<Foot />, container);
   });
   const items = container.getElementsByClassName('item');
-  expect(items[0].textContent).toBe('Pranav Gupta 2019');
+  expect(items[0].textContent).toBe('Pranav Gupta 2020');
 });

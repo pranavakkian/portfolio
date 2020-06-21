@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 /* eslint-disable no-undef */
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 import 'semantic-ui-css/semantic.min.css';
@@ -12,6 +12,6 @@ ReactGA.initialize('UA-124182431-4');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 // eslint-disable-next-line react/jsx-filename-extension
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<StrictMode><App /></StrictMode>, document.getElementById('root'));
 
 serviceWorker.register();
