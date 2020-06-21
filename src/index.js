@@ -14,4 +14,11 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 // eslint-disable-next-line react/jsx-filename-extension
 ReactDOM.render(<StrictMode><App /></StrictMode>, document.getElementById('root'));
 
-serviceWorker.register();
+serviceWorker.register({
+  onUpdate: (registration) => {
+    if (registration && registration.waiting) {
+      registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+    }
+    window.location.reload();
+  },
+});

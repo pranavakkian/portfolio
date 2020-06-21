@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "prebuild": "npm run lint && npm run test:coverage",
+    "prebuild": "npm run lint",
     "build": "react-scripts build --profile",
     "test": "react-scripts test",
     "lint": "eslint . --ext .jsx",
