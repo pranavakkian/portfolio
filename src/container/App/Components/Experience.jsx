@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { Container, Divider, Header } from 'semantic-ui-react';
 
 const Experience = memo(() => (
@@ -6,10 +6,22 @@ const Experience = memo(() => (
     <Header as="h2" color="grey">
       Experience
     </Header>
+    <Header as="h4">System Engineer</Header>
+    <p style={{ fontSize: '13px' }}>Tata Consultancy Services | Full-time</p>
+    <p style={{ fontSize: '13px', color: 'grey' }}>
+      Apr 2021 - present
+      <br />
+      Bengalure, Karnataka, India
+    </p>
+    <p style={{ fontSize: '13px' }}>
+      Working as a full stack developer for a major UK retailer and e-commerce
+      company.
+    </p>
+    <Divider />
     <Header as="h4">Assistant System Engineer</Header>
     <p style={{ fontSize: '13px' }}>Tata Consultancy Services | Full-time</p>
     <p style={{ fontSize: '13px', color: 'grey' }}>
-      Apr 2020 - present
+      Apr 2020 - March 2021 | 1 yr
       <br />
       Bengalure, Karnataka, India
     </p>

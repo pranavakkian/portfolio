@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { Container, Header } from 'semantic-ui-react';
 
 const About = memo(() => (

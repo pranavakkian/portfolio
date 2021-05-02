@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { Container, Divider, Header } from 'semantic-ui-react';
 
 const Education = memo(() => (

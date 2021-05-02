@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { Container, Divider, Header } from 'semantic-ui-react';
 
 const Accomplishments = memo(() => (
@@ -6,6 +6,25 @@ const Accomplishments = memo(() => (
     <Header as="h2" color="grey">
       Accomplishments
     </Header>
+    <Header as="h4" color="blue">
+      Awards
+    </Header>
+    <Header as="h5">On The Spot Award</Header>
+    <p style={{ fontSize: '13px', color: 'grey' }}>
+      Apr 2021 - Tata Consultancy Services
+    </p>
+    <p style={{ fontSize: '13px' }}>
+      For developing key functionality at pace.
+    </p>
+    <Divider />
+    <Header as="h5">Rookie Rockstar</Header>
+    <p style={{ fontSize: '13px', color: 'grey' }}>
+      Nov 2020 - Tata Consultancy Services
+    </p>
+    <p style={{ fontSize: '13px' }}>
+      Recieved award in order to deliver best quality products.
+    </p>
+    <Divider />
     <Header as="h4" color="blue">
       Languages
     </Header>
